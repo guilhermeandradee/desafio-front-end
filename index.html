@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+       font-size: 15px; text-align: center;
+
+       background-color: hsl(215, 66%, 6%);
+       color: rgba(255, 255, 255, 0.507);
+
+       padding: 5px;
+      }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+
+      font-family: 'Outfit';
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    main#card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 100vh;
+
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      max-width: 300px;
+      max-height: 1000px;
+
+      padding: 25px;
+
+      background-color: hsl(216, 50%, 16%);
+      box-shadow: 0px 0px 15px hsl(217, 94%, 6%);
+      border-radius: 10px;
+    }
+
+    h1 {
+      display: flex;
+      color: #fff;
+    
+      font-size: 18px;
+
+      margin-top: 20px;
+    }
+
+    #container p {
+      font-size: .8rem;
+      font-weight: lighter;
+
+      color: hsla(0, 0%, 100%, 0.5);
+
+      margin-top: 20px;
+    }
+
+    #container-value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 100%;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+
+    #container p.value {
+      color: hsl(178, 100%, 50%);
+
+      margin-bottom: 20px;
+    }
+
+    #container p.days {
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 250px;
+
+      border-radius: 10px;
+    }
+
+
+    .vvalue {
+      display: flex;
+      align-items: center;
+    }
+
+    .vvalue {
+
+    }
+
+    .line-footer {
+      width: 100%;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    footer > img {
+      max-width: 35px;
+
+      align-items: flex-start;
+      margin-right: 10px;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+
+      margin: 15px auto 0px auto;
+
+      color: rgba(255, 255, 255, 0.651);
+      font-size: .8rem;
+
+    }
+
+    footer > a {
+      color: #fff;
+      text-decoration: none;
+
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    section.img img:hover {
+      filter: blur(1.5px);
+      filter: saturate(.8);
+    }
+
+    h1:hover {
+      color: cyan;
+    }
+
+    footer a:hover {
+      color: cyan;
+    }
+
+  </style>
+</head>
+<body>
+
+  <main id="card">
+
+    <div id="container">
+      <section class="img">
+        <img src="nft-preview-card-component-main/images/image-equilibrium.jpg" alt="equilibrium">
+      </section>
+      <div id="text">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div id="container-value">
+        
+        <div class="vvalue">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+          <p class="value">
+            0.041 ETH
+          </p>
+        </div>
+
+        <div class="vvalue">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+          <p class="days">
+            3 days left
+          </p>
+        </div>
+
+        
+      </div>
+
+      <div class="line-footer">
+
+      </div>
+      <footer>
+        <img src="nft-preview-card-component-main/images/image-avatar.png" alt="avatar">
+        Creation of <a href="#">Jules Wyvern</a>
+      </footer>
+    </div>
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Guilherme Andrade</a>.
+  </div>
+</body>
+</html>
